@@ -5,7 +5,9 @@ var async = require("async");
 
 var client = new opcua.OPCUAClient();
 
-var endpointUrl = "opc.tcp://" + require("os").hostname() + ":48010";
+// var endpointUrl = "opc.tcp://" + require("os").hostname() + ":48010";
+
+var endpointUrl = "opc.tcp://brent-desktop:4334";
 
 var the_session = null;
 async.series([
